@@ -1,0 +1,625 @@
+<?xml version='1.0' encoding='UTF-8'?><!-- Published by JAX-WS RI (http://jax-ws.java.net). RI's version is Metro/2.3.2-b608 (trunk-7979; 2015-01-21T12:50:19+0000) JAXWS-RI/2.2.11-b150120.1832 JAXWS-API/2.2.12 JAXB-RI/2.2.12-b141219.1637 JAXB-API/2.2.13-b141020.1521 svn-revision#unknown. --><xs:schema xmlns:tns="http://controller/" xmlns:xs="http://www.w3.org/2001/XMLSchema" version="1.0" targetNamespace="http://controller/">
+
+<xs:element name="addChucvu" type="tns:addChucvu"/>
+
+<xs:element name="addChucvuResponse" type="tns:addChucvuResponse"/>
+
+<xs:element name="addChuyenmon" type="tns:addChuyenmon"/>
+
+<xs:element name="addChuyenmonResponse" type="tns:addChuyenmonResponse"/>
+
+<xs:element name="addLuong" type="tns:addLuong"/>
+
+<xs:element name="addLuongResponse" type="tns:addLuongResponse"/>
+
+<xs:element name="addNhanvien" type="tns:addNhanvien"/>
+
+<xs:element name="addNhanvienResponse" type="tns:addNhanvienResponse"/>
+
+<xs:element name="addPhongban" type="tns:addPhongban"/>
+
+<xs:element name="addPhongbanResponse" type="tns:addPhongbanResponse"/>
+
+<xs:element name="addTrinhdohocvan" type="tns:addTrinhdohocvan"/>
+
+<xs:element name="addTrinhdohocvanResponse" type="tns:addTrinhdohocvanResponse"/>
+
+<xs:element name="chucvu" type="tns:chucvu"/>
+
+<xs:element name="chuyenmon" type="tns:chuyenmon"/>
+
+<xs:element name="dangnhap" type="tns:dangnhap"/>
+
+<xs:element name="deleteChucvu" type="tns:deleteChucvu"/>
+
+<xs:element name="deleteChucvuResponse" type="tns:deleteChucvuResponse"/>
+
+<xs:element name="deleteChuyenmon" type="tns:deleteChuyenmon"/>
+
+<xs:element name="deleteChuyenmonResponse" type="tns:deleteChuyenmonResponse"/>
+
+<xs:element name="deleteLuong" type="tns:deleteLuong"/>
+
+<xs:element name="deleteLuongResponse" type="tns:deleteLuongResponse"/>
+
+<xs:element name="deleteNhanvien" type="tns:deleteNhanvien"/>
+
+<xs:element name="deleteNhanvienResponse" type="tns:deleteNhanvienResponse"/>
+
+<xs:element name="deletePhongban" type="tns:deletePhongban"/>
+
+<xs:element name="deletePhongbanResponse" type="tns:deletePhongbanResponse"/>
+
+<xs:element name="deleteTrinhdohocvan" type="tns:deleteTrinhdohocvan"/>
+
+<xs:element name="deleteTrinhdohocvanResponse" type="tns:deleteTrinhdohocvanResponse"/>
+
+<xs:element name="findAllChucvu" type="tns:findAllChucvu"/>
+
+<xs:element name="findAllChucvuResponse" type="tns:findAllChucvuResponse"/>
+
+<xs:element name="findAllChuyenmon" type="tns:findAllChuyenmon"/>
+
+<xs:element name="findAllChuyenmonResponse" type="tns:findAllChuyenmonResponse"/>
+
+<xs:element name="findAllLuong" type="tns:findAllLuong"/>
+
+<xs:element name="findAllLuongResponse" type="tns:findAllLuongResponse"/>
+
+<xs:element name="findAllNhanvien" type="tns:findAllNhanvien"/>
+
+<xs:element name="findAllNhanvienResponse" type="tns:findAllNhanvienResponse"/>
+
+<xs:element name="findAllPhongban" type="tns:findAllPhongban"/>
+
+<xs:element name="findAllPhongbanResponse" type="tns:findAllPhongbanResponse"/>
+
+<xs:element name="findAllTrinhdohocvan" type="tns:findAllTrinhdohocvan"/>
+
+<xs:element name="findAllTrinhdohocvanResponse" type="tns:findAllTrinhdohocvanResponse"/>
+
+<xs:element name="findChucvu" type="tns:findChucvu"/>
+
+<xs:element name="findChucvuResponse" type="tns:findChucvuResponse"/>
+
+<xs:element name="findChuyenmon" type="tns:findChuyenmon"/>
+
+<xs:element name="findChuyenmonResponse" type="tns:findChuyenmonResponse"/>
+
+<xs:element name="findLuong" type="tns:findLuong"/>
+
+<xs:element name="findLuongResponse" type="tns:findLuongResponse"/>
+
+<xs:element name="findNhanvien" type="tns:findNhanvien"/>
+
+<xs:element name="findNhanvienResponse" type="tns:findNhanvienResponse"/>
+
+<xs:element name="findPhongban" type="tns:findPhongban"/>
+
+<xs:element name="findPhongbanResponse" type="tns:findPhongbanResponse"/>
+
+<xs:element name="findTrinhdohocvan" type="tns:findTrinhdohocvan"/>
+
+<xs:element name="findTrinhdohocvanResponse" type="tns:findTrinhdohocvanResponse"/>
+
+<xs:element name="login" type="tns:login"/>
+
+<xs:element name="loginResponse" type="tns:loginResponse"/>
+
+<xs:element name="loginfindAll" type="tns:loginfindAll"/>
+
+<xs:element name="loginfindAllResponse" type="tns:loginfindAllResponse"/>
+
+<xs:element name="nhanvien" type="tns:nhanvien"/>
+
+<xs:element name="phongban" type="tns:phongban"/>
+
+<xs:element name="tinhluong" type="tns:tinhluong"/>
+
+<xs:element name="trinhdohocvan" type="tns:trinhdohocvan"/>
+
+<xs:element name="updateChucvu" type="tns:updateChucvu"/>
+
+<xs:element name="updateChucvuResponse" type="tns:updateChucvuResponse"/>
+
+<xs:element name="updateChuyenmon" type="tns:updateChuyenmon"/>
+
+<xs:element name="updateChuyenmonResponse" type="tns:updateChuyenmonResponse"/>
+
+<xs:element name="updateLuong" type="tns:updateLuong"/>
+
+<xs:element name="updateLuongResponse" type="tns:updateLuongResponse"/>
+
+<xs:element name="updateNhanvien" type="tns:updateNhanvien"/>
+
+<xs:element name="updateNhanvienResponse" type="tns:updateNhanvienResponse"/>
+
+<xs:element name="updatePhongban" type="tns:updatePhongban"/>
+
+<xs:element name="updatePhongbanResponse" type="tns:updatePhongbanResponse"/>
+
+<xs:element name="updateTrinhdohocvan" type="tns:updateTrinhdohocvan"/>
+
+<xs:element name="updateTrinhdohocvanResponse" type="tns:updateTrinhdohocvanResponse"/>
+
+<xs:complexType name="updateChuyenmon">
+<xs:sequence>
+<xs:element name="arg0" type="xs:string" minOccurs="0"/>
+<xs:element name="arg1" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="updateChuyenmonResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="findNhanvien">
+<xs:sequence>
+<xs:element name="arg0" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="findNhanvienResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:nhanvien" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="nhanvien">
+<xs:sequence>
+<xs:element name="chucvu" type="xs:string" minOccurs="0"/>
+<xs:element name="chuyenmon" type="xs:string" minOccurs="0"/>
+<xs:element name="diachi" type="xs:string" minOccurs="0"/>
+<xs:element name="email" type="xs:string" minOccurs="0"/>
+<xs:element name="gioitinh" type="xs:string" minOccurs="0"/>
+<xs:element name="maNv" type="xs:string" minOccurs="0"/>
+<xs:element name="ngaysinh" type="xs:dateTime" minOccurs="0"/>
+<xs:element name="phongban" type="xs:string" minOccurs="0"/>
+<xs:element name="sdt" type="xs:string" minOccurs="0"/>
+<xs:element name="tdHocvan" type="xs:string" minOccurs="0"/>
+<xs:element name="tenNv" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="findAllChuyenmon">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="findAllChuyenmonResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:chuyenmon" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="chuyenmon">
+<xs:sequence>
+<xs:element name="maCm" type="xs:string" minOccurs="0"/>
+<xs:element name="tenCm" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="findLuong">
+<xs:sequence>
+<xs:element name="arg0" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="findLuongResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:tinhluong" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="tinhluong">
+<xs:sequence>
+<xs:element name="luongCb" type="xs:int"/>
+<xs:element name="maNv" type="xs:string" minOccurs="0"/>
+<xs:element name="songaylam" type="xs:double"/>
+<xs:element name="tenNv" type="xs:string" minOccurs="0"/>
+<xs:element name="thuong" type="xs:double"/>
+<xs:element name="tongTien" type="xs:double"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="addChuyenmon">
+<xs:sequence>
+<xs:element name="arg0" type="xs:string" minOccurs="0"/>
+<xs:element name="arg1" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="addChuyenmonResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="findPhongban">
+<xs:sequence>
+<xs:element name="arg0" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="findPhongbanResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:phongban" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="phongban">
+<xs:sequence>
+<xs:element name="maPb" type="xs:string" minOccurs="0"/>
+<xs:element name="sdt" type="xs:int"/>
+<xs:element name="tenPb" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="addLuong">
+<xs:sequence>
+<xs:element name="arg0" type="xs:string" minOccurs="0"/>
+<xs:element name="arg1" type="xs:string" minOccurs="0"/>
+<xs:element name="arg2" type="xs:int"/>
+<xs:element name="arg3" type="xs:double"/>
+<xs:element name="arg4" type="xs:double"/>
+<xs:element name="arg5" type="xs:double"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="addLuongResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="addTrinhdohocvan">
+<xs:sequence>
+<xs:element name="arg0" type="xs:string" minOccurs="0"/>
+<xs:element name="arg1" type="xs:string" minOccurs="0"/>
+<xs:element name="arg2" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="addTrinhdohocvanResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="updatePhongban">
+<xs:sequence>
+<xs:element name="arg0" type="xs:string" minOccurs="0"/>
+<xs:element name="arg1" type="xs:string" minOccurs="0"/>
+<xs:element name="arg2" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="updatePhongbanResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="updateNhanvien">
+<xs:sequence>
+<xs:element name="arg0" type="xs:string" minOccurs="0"/>
+<xs:element name="arg1" type="xs:string" minOccurs="0"/>
+<xs:element name="arg2" type="xs:string" minOccurs="0"/>
+<xs:element name="arg3" type="xs:string" minOccurs="0"/>
+<xs:element name="arg4" type="xs:string" minOccurs="0"/>
+<xs:element name="arg5" type="xs:string" minOccurs="0"/>
+<xs:element name="arg6" type="xs:dateTime" minOccurs="0"/>
+<xs:element name="arg7" type="xs:string" minOccurs="0"/>
+<xs:element name="arg8" type="xs:string" minOccurs="0"/>
+<xs:element name="arg9" type="xs:string" minOccurs="0"/>
+<xs:element name="arg10" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="updateNhanvienResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="deleteLuong">
+<xs:sequence>
+<xs:element name="arg0" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="deleteLuongResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="updateTrinhdohocvan">
+<xs:sequence>
+<xs:element name="arg0" type="xs:string" minOccurs="0"/>
+<xs:element name="arg1" type="xs:string" minOccurs="0"/>
+<xs:element name="arg2" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="updateTrinhdohocvanResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="findChucvu">
+<xs:sequence>
+<xs:element name="arg0" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="findChucvuResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:chucvu" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="chucvu">
+<xs:sequence>
+<xs:element name="ghichu" type="xs:string" minOccurs="0"/>
+<xs:element name="maCv" type="xs:string" minOccurs="0"/>
+<xs:element name="tenCv" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="addPhongban">
+<xs:sequence>
+<xs:element name="arg0" type="xs:string" minOccurs="0"/>
+<xs:element name="arg1" type="xs:string" minOccurs="0"/>
+<xs:element name="arg2" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="addPhongbanResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="findChuyenmon">
+<xs:sequence>
+<xs:element name="arg0" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="findChuyenmonResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:chuyenmon" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="deleteChucvu">
+<xs:sequence>
+<xs:element name="arg0" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="deleteChucvuResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="loginfindAll">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="loginfindAllResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:dangnhap" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="dangnhap">
+<xs:sequence>
+<xs:element name="email" type="xs:string" minOccurs="0"/>
+<xs:element name="password" type="xs:string" minOccurs="0"/>
+<xs:element name="user" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="addNhanvien">
+<xs:sequence>
+<xs:element name="arg0" type="xs:string" minOccurs="0"/>
+<xs:element name="arg1" type="xs:string" minOccurs="0"/>
+<xs:element name="arg2" type="xs:string" minOccurs="0"/>
+<xs:element name="arg3" type="xs:string" minOccurs="0"/>
+<xs:element name="arg4" type="xs:string" minOccurs="0"/>
+<xs:element name="arg5" type="xs:string" minOccurs="0"/>
+<xs:element name="arg6" type="xs:dateTime" minOccurs="0"/>
+<xs:element name="arg7" type="xs:string" minOccurs="0"/>
+<xs:element name="arg8" type="xs:string" minOccurs="0"/>
+<xs:element name="arg9" type="xs:string" minOccurs="0"/>
+<xs:element name="arg10" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="addNhanvienResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="login">
+<xs:sequence>
+<xs:element name="arg0" type="xs:string" minOccurs="0"/>
+<xs:element name="arg1" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="loginResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:dangnhap" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="findAllChucvu">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="findAllChucvuResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:chucvu" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="updateLuong">
+<xs:sequence>
+<xs:element name="arg0" type="xs:string" minOccurs="0"/>
+<xs:element name="arg1" type="xs:string" minOccurs="0"/>
+<xs:element name="arg2" type="xs:int"/>
+<xs:element name="arg3" type="xs:double"/>
+<xs:element name="arg4" type="xs:double"/>
+<xs:element name="arg5" type="xs:double"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="updateLuongResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="findAllNhanvien">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="findAllNhanvienResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:nhanvien" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="deleteNhanvien">
+<xs:sequence>
+<xs:element name="arg0" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="deleteNhanvienResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="deletePhongban">
+<xs:sequence>
+<xs:element name="arg0" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="deletePhongbanResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="deleteTrinhdohocvan">
+<xs:sequence>
+<xs:element name="arg0" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="deleteTrinhdohocvanResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="findTrinhdohocvan">
+<xs:sequence>
+<xs:element name="arg0" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="findTrinhdohocvanResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:trinhdohocvan" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="trinhdohocvan">
+<xs:sequence>
+<xs:element name="maTdhv" type="xs:string" minOccurs="0"/>
+<xs:element name="ngonngu" type="xs:string" minOccurs="0"/>
+<xs:element name="tenTdhv" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="addChucvu">
+<xs:sequence>
+<xs:element name="arg0" type="xs:string" minOccurs="0"/>
+<xs:element name="arg1" type="xs:string" minOccurs="0"/>
+<xs:element name="arg2" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="addChucvuResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="updateChucvu">
+<xs:sequence>
+<xs:element name="arg0" type="xs:string" minOccurs="0"/>
+<xs:element name="arg1" type="xs:string" minOccurs="0"/>
+<xs:element name="arg2" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="updateChucvuResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="findAllLuong">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="findAllLuongResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:tinhluong" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="findAllPhongban">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="findAllPhongbanResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:phongban" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="deleteChuyenmon">
+<xs:sequence>
+<xs:element name="arg0" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="deleteChuyenmonResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="findAllTrinhdohocvan">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="findAllTrinhdohocvanResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:trinhdohocvan" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+</xs:schema>
